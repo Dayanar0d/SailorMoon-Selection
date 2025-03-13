@@ -15,12 +15,11 @@ body {
   align-items: center;
   display: flex;
   gap: 0.4vw;
-  background-color: gray;
   border-radius: 10px;
   padding: 0.4vw;
   width: 70vw;
   height: 30vh;
-  background: rgba(255, 255, 255, 0.542);
+  background: rgba(255, 255, 255, 0.424);
   transition: width 1.5s, height 1.5s;
 }
 
@@ -59,13 +58,23 @@ body {
   background-image: url(/images/venus.png);
 }
 
-@keyframes mymove {
+
+/* More failed test
+#myDIV {
+  margin: auto;
+  width: 100px; /* Initial width */
+  height: 200px;
+  background: orange;
+  position: relative;
+  font-size: 18px;
+  padding: 16px;
+  text-align: center;
+}
+ @keyframes mymove {
   from {
-    top: 0px;
     width: 100px;
   }
   to {
-    top: 200px;
     width: 500px;
   }
-}
+} */
