@@ -4,22 +4,46 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sailor Moon Select</title>
+
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="animations.css" />
     <link rel="stylesheet" href="java.js" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
-  <body>
-    <div class="flex-container" onclick="myFunction()">
-      <div class="flex-item item1">Moon</div>
-      <div class="flex-item item2">Mercury</div>
-      <div class="flex-item item3">Mars</div>
-      <div class="flex-item item4">Jupiter</div>
-      <div class="flex-item item5">Venus</div>
-    </div>
+  <div class="screen-container">
+      <div class="flex-container" onclick="updateCharacter()">
+        <div id="sailor-moon" class="flex-item item1" onclick="moonTransform()">Sailor Moon</div>
+        <div id="sailor-mercury" class="flex-item item2">Sailor Mercury</div>
+        <div id="sailor-mars" class="flex-item item3"> Sailor Mars</div>
+        <div id="sailor-jupiter" class="flex-item item4">Sailor Jupiter</div>
+        <div id="sailor-venus" class="flex-item item5">Sailor Venus</div>
+      </div>
 
-    <!-- This is a test div for animations I keep failing at  -->
-    <!-- <div id="myDIV" onclick="myFunction()">
-      Click me to start the animation.
-    </div> -->
+
+      <div id="character-screen">
+        <h2 id="char-name">Sailor Moon</h2>
+        <!-- <div id="character-stats"> -->
+          <!-- <div class="button-container">
+            <button class="sailor-forms-buttons">Princess Serenity</button>
+            <button class="sailor-forms-buttons">Sailor Moon Crisis</button>
+            <button class="sailor-forms-buttons">Neo Queen Serenity</button>
+            <button class="sailor-forms-buttons">Eternal Sailor Moon</button>
+          </div> -->
+          <!-- <img src="sailor-forms/Eternal" alt="">
+        </div>
+
+        <div id="character-display">
+          <img id="sailor-moon-test" src="gifs/SailorMoonTransformation.gif" alt="sailor-moon-display"> -->
+        </div>
+      </div>
+  </div>
   </body>
+  <script src="java.js"></script>
 </html>

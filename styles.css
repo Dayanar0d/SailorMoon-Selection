@@ -1,3 +1,8 @@
+* {
+  font-family: "VT323", monospace;
+  color: white;
+}
+
 html,
 body {
   height: 100%;
@@ -58,23 +63,43 @@ body {
   background-image: url(/images/venus.png);
 }
 
+/* The character info part */
+.screen-container {
+  border: solid rgba(255, 192, 203, 0);
+}
 
-/* More failed test
-#myDIV {
-  margin: auto;
-  width: 100px; /* Initial width */
+#sailor-moon-test {
   height: 200px;
-  background: orange;
-  position: relative;
-  font-size: 18px;
-  padding: 16px;
+  width: 200px;
+  margin-top: 5px;
+}
+
+#character-screen {
+  background: rgba(255, 255, 255, 0.424);
+  align-items: center;
+  border-radius: 10px;
+  display: none;
+}
+
+#character-stats {
+  background: rgba(255, 255, 255, 0.725);
+  align-items: center;
+  border-radius: 10px;
+}
+
+#char-name {
+  opacity: 0;
+  color: white;
   text-align: center;
 }
- @keyframes mymove {
-  from {
-    width: 100px;
-  }
-  to {
-    width: 500px;
-  }
-} */
+
+.button-container {
+  border: solid transparent;
+  margin: right;
+}
+
+.sailor-forms-buttons {
+  background: rgba(255, 255, 255, 0.725);
+  align-items: center;
+  border-radius: 10px;
+}
